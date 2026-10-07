@@ -14,5 +14,9 @@ export const routes = [
   {
     "name": "审阅清单",
     "route": "/review"
+  },
+  {
+    "name": "离线合并",
+    "route": "/merge"
   }
 ] as const;
