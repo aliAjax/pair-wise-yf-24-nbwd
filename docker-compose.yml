@@ -1,0 +1,11 @@
+name: policy-diff
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-policy-diff}-frontend
+    env_file:
+      - .env
+    ports:
+      - "${FRONTEND_PORT:-20112}:80"
